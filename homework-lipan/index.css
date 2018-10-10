@@ -1,0 +1,58 @@
+.header {
+    text-align: center;
+    width: 100%;
+    background: #ff0;
+}
+
+div {
+    display: inline-block;
+}
+
+.content {
+    width: 100%;
+    background: #f7f7f7;
+    border: 5px solid blue;
+}
+
+img {
+    width: 100%;
+}
+
+.box1 {
+    width: 600px;
+    margin: 10px;
+}
+
+.box2 {
+
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+}
+
+a:link { /*未被访问状态*/
+    text-decoration: none; /*取消下划线*/
+    font-size: 20px;
+    color: red;
+}
+
+a:visited { /*已被访问状态*/
+    font-size: 30px;
+}
+
+a:hover { /*鼠标悬停状态*/
+    color: black;
+}
+
+a:active { /*活动状态*/
+
+}
+body{
+    background-image: url(images/1.jpg);
+    /*cursor: hand;wait/move/crosshair/光标样式*/
+}
+p{
+    word-wrap: break-word;
+}

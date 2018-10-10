@@ -1,0 +1,19 @@
+.head {
+    text-align: center;
+    background-color: skyblue;
+}
+
+.content_div {
+    width: 100%;
+    height: 600px;
+
+    border: solid 2px #666;
+    text-align: center;
+}
+
+.foot{
+    background-color: #f7f7f7;
+    margin: 10px;
+    text-align: center;
+}
+

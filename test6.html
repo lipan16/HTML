@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Title</title>
+    <meta charset="UTF-8">
+    <style>
+        div{
+            display: inline-block;
+        }
+        .box1{
+            background: red url(./images/bd_logo1.png) no-repeat fixed center top;
+        }
+        .box2{
+            background: green;
+        }
+        .box3{
+            /*background: url("./images/0.jpg") no-repeat;*/
+            height: 300px;
+            width: 500px;
+            border: 5px solid blue;
+        }
+        .box4{
+            /*background: url("./images/bd_logo1.png") no-repeat center bottom;*/
+            height: 300px;
+            width: 500px;
+            border: 5px solid blue;
+        }
+        .box5{
+            background: url("./images/0.jpg") no-repeat;
+            height: 700px;
+            width: 1000px;
+        }
+        .box6{
+            background: url("./images/bd_logo1.png") no-repeat center bottom;
+            height: 700px;
+            width: 1000px;
+        }
+    </style>
+</head>
+<!--缩写
+background: 背景颜色 背景图片 平铺方式 关联方式(是否随滚动条滚动) 定位方式（任何一个属性可以被省略
+-->
+<body>
+<!--<div class="box1">我是文字</div>-->
+<!--<div class="box2">-->
+    <!--<img src="./images/bd_logo1.png" alt="wu">-->
+<!--</div>-->
+
+<div>
+    <div class="box4">
+        <a href="index.html" title="跳转到首页" target="_self"><img src="images/0.jpg" alt="图片加载失败" width="500px"></a>
+    </div>
+    <div class="box3">
+        <p>我的个人说明</p>
+    </div>
+</div>
+
+<!--<div class="box5">-->
+    <!--<div class="box6"></div>-->
+<!--</div>-->
+</body>
+</html>

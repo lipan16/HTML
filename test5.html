@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>div和span标签</title>
+    <style>
+        div{
+            display: inline;
+            background: #f00;
+            width: 100px;
+            height: 100px;
+        }
+        .header{
+            width: 980px;
+            height: 100px;
+            background: red;
+            margin-bottom: 10px;
+        }
+        .content{
+            width: 980px;
+            height: 500px;
+            background: green;
+            margin-bottom: 10px;
+        }
+        .footer{
+            width: 980px;
+            height: 100px;
+            background: blue;
+            margin: auto;
+        }
+        .logo{
+            width: 200px;
+            height: 50px;
+            background: pink;
+            float: left;
+            margin: 20px;
+        }
+        .nav{
+            width: 600px;
+            height: 50px;
+            background: yellow;
+            float: left;
+            margin: 20px;
+        }
+        .aside{
+            width: 250px;
+            height: 460px;
+            background: purple;
+            float: left;
+            margin: 20px;
+        }
+        .article{
+            width: 650px;
+            height: 460px;
+            background: deepskyblue;
+            float: right;
+        }
+        span{
+            display: block;
+            background: #0f0;
+            width: 100px;
+            height: 200px;
+            color: red;
+        }
+    </style>
+</head>
+
+<!--
+div 配合css完成网页的基本布局
+
+span 用于配合css修改一些局部信息
+-->
+<!--
+css中的块级元素和行内元素
+1块级元素会独占一行 容器标签和p标签 div h ul ol dl li dt dd p。没有设置宽度则和父级一样
+2行内元素不会独占一行 除了p之外的所有文本标签。没有设置宽度则和内容一样宽，不能设置宽高
+3行内块级元素：让元素不独占一行，又可以设置宽高
+-->
+<body>
+<!--<p>努力到<span>无能为力</span>，拼搏到<span>感动自己</span></p>-->
+<!--<div class="header">-->
+    <!--<div class="logo"></div>-->
+    <!--<div class="nav"></div>-->
+<!--</div>-->
+<!--<div class="content">-->
+    <!--<div class="aside"></div>-->
+    <!--<div class="article"></div>-->
+<!--</div>-->
+<!--<div class="footer"></div>-->
+<div>我是div1</div>
+<div>我是div2</div>
+<span>无能为力</span>
+<span>感动自己</span>
+
+</body>
+</html>

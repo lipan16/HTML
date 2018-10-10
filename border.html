@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>border 属性</title>
+</head>
+<style>
+    *{/*清空默认标签内外边距，效率低*/
+        padding: 0;
+        margin: 0;
+    }
+    body,div,dl,dt,dd,ol,ul,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{/*企业清空默认标签内外边距写法*/
+        margin: 0;
+        padding: 0;
+    }
+    /*div{*/
+    /*width: 200px;*/
+    /*height: 200px;*/
+    /*}*/
+    .box{
+        width: 200px;
+        height: 200px;
+        background-color: blanchedalmond;
+
+        /*border-top: 5px solid blue;*/
+        /*border-right: 4px solid skyblue;*/
+        /*border-left: 9px solid #ff0;*/
+        /*border-bottom: 3px solid green;*/
+        border-width: 5px 4px 9px 3px;
+        border-style: solid double dashed dotted;
+        border-color: blue #ff0 #f0f green;
+    }
+    .box1{
+        width: 0;
+        height: 0;
+        border: 25px solid white;
+        border-top-color: red;
+        border-bottom-style: none;
+    }
+    .box2{
+        width: 100px;
+        height: 100px;
+        border: 5px solid pink;
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+    span{
+        display: inline-block;
+        height: 100px;
+        width: 100px;
+        border: 2px solid #000;
+    }
+    .box3{
+        height: 100px;
+        border: 2px solid #000;
+    }
+    .sp1{
+        margin: 20px 40px 80px 160px;
+        background-color: #f00;
+    }
+    .spa1{
+        margin-right: 50px;
+    }
+    .spa2{
+        margin-left:100px;
+    }
+    .hezi1{
+        margin-bottom: 30px;
+    }
+    .hezi2{
+        margin-top: 20px;
+    }
+    a,b,strong{
+        width: 100px;
+        height: 100px;
+        border: 5px solid blue;
+        padding: 20px;
+        margin: 20px;
+    }
+    .big{
+        width: 500px;
+        height: 500px;
+        box-sizing: border-box;
+        background-color: #f00;
+        /*border: 1px solid blue;*/
+        padding-top: 150px;
+        padding-left: 150px;
+    }
+    .small{
+        width: 200px;
+        height: 200px;
+        background-color: #f0f;
+        /*margin-top: 150px;*/
+        /*margin-left: 150px;*/
+        /*margin: 0 auto; 水平居中，竖直方向只能用像素来控制*/
+    }
+    p{
+        width: 610px;
+        height: 110px;
+    }
+</style>
+<body>
+
+<p>dioacidusvgdschdvgcdskbk</p>
+
+<div class="big">
+    <div class="small"></div>
+</div>
+<hr>
+<div class="box"></div>
+<hr>
+<div class="box1"></div>
+<hr>
+<div class="box2">
+    我是文字1我是文字1我是文字1我是文字1我是文字1我是文字1
+</div>
+<span class="sp1">我是span1</span><span class="sp2">我是span2</span><span class="sp3">我是span3</span>
+<div class="box3"></div>
+<hr>
+<span class="spa1">我是span1</span><span class="spa2">我是span2</span>
+
+<div class="hezi1">盒子1</div>
+<div class="hezi2">盒子2</div>
+<hr>
+
+<a href="#">我是超链接</a>
+<b>我是加粗</b>
+<strong>我是强调</strong>
+<hr>
+
+</body>
+</html>

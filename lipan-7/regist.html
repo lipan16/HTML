@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎你，请先登陆！</title>
+    <link rel="stylesheet" href="css/regist.css">
+    <!--<script type="text/javascript" src="js/login.js"></script>-->
+</head>
+<body>
+
+<div id="header" class="head">
+    <h1>登记注册</h1>
+</div>
+
+<div id="content" class="content_div">
+    <div>
+        <p align="left"><strong>基本信息</strong></p>
+        <p>
+            姓名：<input id="name" type="text" name="user" placeholder="姓名">
+            姓名拼音：<input id="namepy" type="text" name="user" placeholder="姓名拼音">
+            曾用名：<input id="usedname" type="text" name="user" placeholder="曾用名">
+        </p>
+        <p>
+            性别：
+            <select>
+                <option name="gender" value="male" selected>男</option>
+                <option name="gender" value="female">女</option>
+            </select>
+            出生日期：<input type="date">
+            年龄：<input type="number">
+        </p>
+        <p>
+            国家：
+            <select>
+                <option name="nation" value="zh">中国</option>
+                <option name="nation" value="foreign">外国</option>
+            </select>
+            民族：
+            <input type="radio" name="race" value="majority" checked>汉族
+            <input type="radio" name="race" value="minority">少数民族
+            籍贯：<input type="text" name="place">
+        </p>
+        <p>
+            身份证件类型：
+            <select>
+                <option name="idcard" value="IDCard">居民身份证</option>
+                <option name="idcard" value="IDCard">护照</option>
+                <option name="idcard" value="IDCard">港澳居民来往内地通行证</option>
+                <option name="idcard" value="IDCard">外国人出入境证</option>
+            </select>
+            身份证件号：<input type="number" name="idnumber" maxlength="18">
+            港澳台侨：
+            <input type="radio" name="neilu">是
+            <input type="radio" name="neilu" checked>否
+        </p>
+        <p>
+            电话：<input type="number" name="phonenumber">
+            邮箱：<input type="email" name="email">
+            工资卡号：<input type="number" name="yhnumber" maxlength="19">
+        </p>
+
+    </div>
+    <hr color="red">
+    <div>
+        <p align="left"><strong>在校信息</strong></p>
+        <p>
+            来校年月：<input type="date">
+            从教年月：<input type="date">
+            参加工作年月：<input type="date">
+        </p>
+        <p>
+            个人身份：
+            <select>
+                <option name="person" value="person">助教</option>
+                <option name="person" value="person">讲师</option>
+                <option name="person" value="person">教授</option>
+            </select>
+            所在单位：
+            <select>
+                <option name="org" value="organization">机关单位</option>
+                <option name="org" value="organization">企业单位</option>
+                <option name="org" value="organization">社会单位</option>
+            </select>
+            教职工类别：<input type="text">
+        </p>
+        <p>
+            教职工来源：<input type="text">
+            导师类别：<input type="text">
+            导师转任年月：<input type="date">
+        </p>
+    </div>
+
+    <div id="error_box"><br></div>
+    <br>
+    <p>
+        <input type="reset" value="重置">
+        <button onclick="fnLogin()" class="btn-info">注册</button>
+    </p>
+</div>
+
+<div id="footer" class="foot">
+    <p>&copy;2016级信息院李攀版权所有</p>
+</div>
+
+</body>
+</html>

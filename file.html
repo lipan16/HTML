@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>file</title>
+    <script>
+        function ShowFileName(){
+            let file;
+            document.getElementById("file").files;//返回filelist文件列表对象
+            for(let i=0;i<document.getElementById("file").files.length;i++){
+                file=document.getElementById("file").files[i];//file对象为用户选择的单个文件
+                alert(file.name);
+            }
+        }
+        let result=document.getElementById("result");
+        let file=document.getElementById("file");
+        if(typeof FileReader=="undefined"){
+            result.innerHTML="<p>抱歉，您的浏览器不支持FileReader</p>";
+            file.setAttribute("disable","disabled")
+        }
+        function readasdataurl(){
+            let file
+        }
+    </script>
+</head>
+<body>
+<input type="file" id="file" multiple size="80">
+<input type="button" onclick="ShowFileName()" value="文件上传">
+
+<h1>sosuo<cite>html 5</cite></h1>
+
+<p>磁盘使用量：<meter value="40" max="160" min="0">40/160</meter>GB</p>
+
+<h1>sosuo<mark>html 5</mark></h1>
+
+<!--<figure>-->
+    <!--<img src="images/1.jpg" alt="1">-->
+    <!--<img src="images/0.jpg" alt="1">-->
+    <!--<img src="images/bd_logo1.png" alt="1">-->
+<!--</figure>-->
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>css test</title>
+    <style>
+        .header {
+            text-align: center;
+            font-size: 50px;
+            height: 100px;
+            background: #00ffff;
+        }
+
+        .content {
+            font-size: 40px;
+            text-align: center;
+            height: 500px;
+        }
+
+        .footer {
+            font-size: 30px;
+            height: 100px;
+            background: #aaaaaa;
+        }
+
+        div > table {
+            background: #000;
+            color: red;
+            height: 100%;
+            width: 100%;
+            border: 20px;
+        }
+
+        table div {
+            height: 100%;
+            background: #fff;
+        }
+
+        hr {
+            height: 4px;
+            background: #ff00ff;
+        }
+
+        .logo {
+            font-size: 20px;
+            width: 50px;
+            height: 50px;
+            background: pink;
+            float: left;
+            margin: 10px;
+        }
+
+        .nav {
+            width: 200px;
+            font-size: 20px;
+            background: yellow;
+            float: right;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    头部
+    <div class="logo">logo</div>
+    <div class="nav">导航栏</div>
+</div>
+<hr>
+<div class="content">
+    <table>
+        <tr>
+            <td>
+                <div>表1</div>
+            </td>
+            <td>
+                <div>表2</div>
+            </td>
+        </tr>
+    </table>
+</div>
+<hr>
+<div class="footer">底部</div>
+</body>
+</html>

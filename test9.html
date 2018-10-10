@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script language="JavaScript">
+        function check(){
+            let pass1=document.getElementById("pass1");
+            let pass2=document.getElementById("pass2");
+            if(pass1.value!=pass2.value)
+                pass2.setCustomValidity("密码不一致");
+            else
+                pass2.setCustomValidity("");
+
+            let email=document.getElementById("email");
+            if(email.value==""){
+                alert("请输入Email地址");
+                return false;
+            }
+            else if(!email.checkValidity())
+                alert("请输入正确的Email地址");
+            else
+                alert("输入有效");
+        }
+    </script>
+</head>
+<body>
+
+<input type="search">
+<input type="tel">
+
+<h2>可编辑列表</h2>
+<ul contenteditable="true">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+</ul>
+<article>
+    <header>
+        <h1>苹果</h1>
+        <p>发表日期：<time pubdate="pubdate">2018/10/06</time></p>
+    </header>
+    <footer>
+        <p><small>著作权</small></p>
+    </footer>
+</article>
+
+<form id="testform" onsubmit="return check();">
+    请选择一个数值：
+    <input type="range" min="0" max="100" step="5">
+    <output onforminput="value=range.value">50</output>
+    <input type="text" required pattern="^\w.*$"><br>
+    密码：<input type="password" id="pass1"><br>
+    确认密码：<input type="password" id="pass2"><br>
+    <input name="email" id="email" type="email">
+    <input type="submit">
+
+</form>
+</body>
+</html>
