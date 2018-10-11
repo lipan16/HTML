@@ -19,7 +19,20 @@
             file.setAttribute("disable","disabled")
         }
         function readasdataurl(){
-            let file
+            let file = document.getElementById("file").files[0];
+            if (/image\/\w+/.test(file.type)) {
+                alert("请选择文件为图像类型");
+                return false;
+            }
+            let reader = new FileReader();
+            reader.readAsDataURL(file);
+            reader.onload = function (e) {
+                let result = document.getElementById("result");
+                result.innerHTML = "<img src="
+                '+this.result+'
+                " alt="
+                " />"
+            }
         }
     </script>
 </head>
