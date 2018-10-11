@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>float_test</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            height: 100px;
+            width: 980px;
+            /*background: #f00;*/
+            margin: 0 auto;
+        }
+
+        .header .logo {
+            width: 250px;
+            height: 100px;
+            background: pink;
+            float: left;
+        }
+
+        .header .language {
+            width: 150px;
+            height: 50px;
+            background: skyblue;
+            float: right;
+        }
+
+        .header .nav {
+            width: 650px;
+            height: 50px;
+            background: purple;
+            float: right;
+        }
+
+        .content {
+            height: 400px;
+            width: 980px;
+            /*background: #0f0;*/
+            margin: 0 auto;
+            margin-top: 10px;
+        }
+
+        .content .aside {
+            width: 320px;
+            height: 400px;
+            background: yellow;
+            float: left;
+        }
+
+        .content .article {
+            width: 650px;
+            height: 400px;
+            /*background: pink;*/
+            float: right;
+        }
+
+        .content .article .articletop {
+            height: 350px;
+            width: 650px;
+            /*background: blue;*/
+        }
+
+        .content .article .articletop .articletopleft {
+            width: 400px;
+            height: 350px;
+            /*background: red;*/
+            float: left;
+        }
+
+        .content .article .articletop .articletopleft .new1 {
+            width: 400px;
+            height: 200px;
+            background: #678;
+        }
+
+        .content .article .articletop .articletopleft .new2 {
+            width: 400px;
+            height: 140px;
+            background: deepskyblue;
+            margin-top: 10px;
+        }
+
+        .content .article .articletop .articletopright {
+            width: 240px;
+            height: 350px;
+            background: green;
+            float: right;
+        }
+
+        .content .article .articlebottom {
+            height: 40px;
+            width: 650px;
+            background: skyblue;
+            margin-top: 10px;
+        }
+
+        .footer {
+            width: 980px;
+            height: 100px;
+            background: #00f;
+            margin: 0 auto;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <div class="logo">logo</div>
+    <div class="language">language</div>
+    <div class="nav">nav</div>
+</div>
+<div class="content">
+    <div class="aside">aside</div>
+    <div class="article">
+        <div class="articletop">
+            <div class="articletopleft">
+                <div class="new1">new1</div>
+                <div class="new2">new2</div>
+            </div>
+            <div class="articletopright">articletopright</div>
+        </div>
+        <div class="articlebottom">articlebottom</div>
+    </div>
+</div>
+<div class="footer">footer</div>
+</body>
+</html>
